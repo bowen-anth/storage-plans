@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(173, 173, 173);
+}
+
 .pie {
     width: 200px;
     height: 200px;
@@ -11,17 +15,23 @@
     border-radius: 50%;
   }
 
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+  }
+
 .total-storage-container {
     border: 2px solid gray;
     width: 30rem;
     padding: 3rem;
-    background-color: rgb(151, 153, 151);
+    background-color: rgb(173, 173, 173);
 }
 
 .total-storage-label-container {
     margin: 0 auto;
     text-align: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     font-weight: bold;
 }
 
@@ -47,11 +57,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3em;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .data-details-container {
-    margin: auto;
+    margin: auto 0;
+    align-items: left;
+    /* border: 1px solid pink; */
 }
 
 .total-data-p,
@@ -74,9 +86,47 @@
 
 .view-details-btn {
     border: none;
-    height: 3em;
+    height: 2em;
+    padding: 5px;
     border-radius: 5px;
     background-color:#f1f1f1;
     font-size: 1em;
     cursor: pointer;
+    margin-top: .5em;
+}
+
+.plan-container {
+    padding: 2rem;
+    margin: auto;
+}
+
+.plan-container hr {
+    width: 2rem;
+    margin-bottom: .5rem;
+    margin-top: -.5rem;
+}
+
+.thirty,
+.hundred,
+.terrabyte {
+    width: 20rem;
+    height: 7rem;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.thirty {
+    background-color:rgb(32, 32, 32);
+    color: white;
+}
+
+.hundred {
+    background-color: rgb(234, 241, 146);
+}
+
+.hundred hr {
+    color: teal;
 }
