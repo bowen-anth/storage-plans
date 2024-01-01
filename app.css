@@ -203,3 +203,10 @@ body {
     background-color: #ddd;
     color: black;
 }
+
+@media (min-width: 1200px) {
+    .main-container {
+        width: 60rem;
+        margin: auto
+    }
+}
